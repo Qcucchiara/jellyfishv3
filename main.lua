@@ -471,7 +471,7 @@ function love.update(dt)
                 pPoisson.x = pPoisson.x - pPoisson.speed
             end
 
-            if pPoisson.x >= largeur then
+            if pPoisson.x >= largeur or < -215 then
                 pPoisson.supprime = true
             end
             if pPoisson.drift == true and (largeur / 2) - 10 < pPoisson.x and pPoisson.x < (largeur / 2) + 10 then
